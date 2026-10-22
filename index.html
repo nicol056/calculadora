@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora científica</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-label="Calculadora">
+    <header><span class="badge">CALCULADORA CIENTÍFICA</span><button id="angle-mode" class="mode" aria-label="Modo angular: grados. Cambiar a radianes">DEG</button></header>
+    <section class="screen" aria-label="Pantalla">
+      <div id="history" class="history"></div>
+      <output id="display" aria-live="polite">0</output>
+    </section>
+    <div class="keys">
+      <button class="science" data-function="sin">sin</button>
+      <button class="science" data-function="cos">cos</button>
+      <button class="science" data-function="tan">tan</button>
+      <button class="science" data-function="sqrt" aria-label="Raíz cuadrada">√x</button>
+      <button class="science" data-function="asin">asin</button>
+      <button class="science" data-function="acos">acos</button>
+      <button class="science" data-function="atan">atan</button>
+      <button class="science" data-function="square" aria-label="Elevar al cuadrado">x²</button>
+      <button class="science" data-function="log">log</button>
+      <button class="science" data-function="ln">ln</button>
+      <button class="science" data-function="exp">eˣ</button>
+      <button class="operator science" data-operator="^" aria-label="Elevar a una potencia">xʸ</button>
+      <button class="science" data-constant="pi" aria-label="Número pi">π</button>
+      <button class="science" data-constant="e" aria-label="Número e">e</button>
+      <button class="science" data-function="factorial" aria-label="Factorial">n!</button>
+      <button class="science" data-function="inverse" aria-label="Inverso">1/x</button>
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="delete" aria-label="Borrar último dígito">⌫</button>
+      <button class="utility" data-action="percent" aria-label="Porcentaje">%</button>
+      <button class="operator" data-operator="/" aria-label="Dividir">÷</button>
+      <button data-number="7">7</button><button data-number="8">8</button><button data-number="9">9</button>
+      <button class="operator" data-operator="*" aria-label="Multiplicar">×</button>
+      <button data-number="4">4</button><button data-number="5">5</button><button data-number="6">6</button>
+      <button class="operator" data-operator="-" aria-label="Restar">−</button>
+      <button data-number="1">1</button><button data-number="2">2</button><button data-number="3">3</button>
+      <button class="operator" data-operator="+" aria-label="Sumar">+</button>
+      <button data-action="sign" aria-label="Cambiar signo">±</button>
+      <button data-number="0">0</button><button data-action="decimal" aria-label="Separador decimal">,</button>
+      <button class="equals" data-action="equals" aria-label="Calcular resultado">=</button>
+    </div>
+    <p class="hint">Introduce un número y elige una función.<br>Operaciones encadenadas de izquierda a derecha.<br>Teclado: números, + − * / ^ y Enter.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root { color-scheme: light; font-family: 'DM Sans', system-ui, sans-serif; background: #ffffff; color: #183d27; }
+* { box-sizing: border-box; }
+body { min-height: 100svh; margin: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(ellipse at 15% 20%, #f9dce8 0%, transparent 55%), radial-gradient(ellipse at 85% 25%, #ddd9fa 0%, transparent 55%), radial-gradient(ellipse at 75% 85%, #d4eee1 0%, transparent 55%), linear-gradient(135deg, #fff1dc, #e0effa); }
+.calculator { width: 100%; max-width: 380px; padding: 28px; background: linear-gradient(145deg, #fce1ec 0%, #e6dff8 35%, #dceefa 65%, #dff2e5 100%); border: 1px solid #000000; border-radius: 30px; box-shadow: 0 20px 60px #183d2714; }
+header { display: flex; align-items: center; justify-content: space-between; }
+.badge { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; color: #52675a; }
+.status { color: #a7edce; font-size: 24px; }
+.screen { min-height: 151px; padding: 34px 0 24px; text-align: right; overflow-wrap: anywhere; }
+.history { min-height: 24px; font-size: 15px; color: #52675a; }
+output { display: block; margin-top: 8px; font-size: clamp(28px, 8vw, 44px); font-weight: 500; letter-spacing: -1.5px; line-height: 1.2; }
+.keys { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 11px; }
+button { min-height: 64px; border: 1px solid #000000; border-radius: 17px; font: 500 23px 'DM Sans', system-ui, sans-serif; background: #b8e0c2; color: #183d27; cursor: pointer; transition: background .15s, transform .15s; touch-action: manipulation; }
+button:hover { background: #d0edd6; }
+button:active { transform: scale(.94); }
+button:focus-visible { outline: 2px solid #a7edce; outline-offset: 3px; }
+.utility { background: #b8e0c2; color: #183d27; font-size: 19px; }
+.operator { background: #b8e0c2; color: #183d27; font-size: 28px; }
+.operator:hover, .operator.selected { background: #d0edd6; }
+.equals { background: #b8e0c2; color: #183d27; font-size: 28px; }
+.equals:hover { background: #d0edd6; }
+.science { min-height: 46px; background: #b8e0c2; font-size: 17px; }
+.mode { min-height: 32px; padding: 0 10px; border-radius: 9px; font-size: 12px; color: #183d27; }
+.hint { margin: 24px 0 0; text-align: center; color: #52675a; font-size: 11px; line-height: 1.8; }
+@media (max-width: 360px) { body { padding: 12px; } .calculator { padding: 20px; } button { min-height: 58px; } }
